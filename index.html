@@ -6,27 +6,21 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     
-    <script defer src="js/main.js"></script>
+    <!-- link to JS -->
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js">
+    </script>
+
+    <script type="text/jsx" defer src="js/App.js"></script>
     <title>Tic-tac-toe</title>
 </head>
-<body>
-    <h1>Tic-Tac-Toe</h1>
-    <h2>It's X's turn!</h2>
-    <div class="flex-container flex-column">
-        <div class="flex-container flex-wrap" id="board">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
-        <!-- A reset button because users are going to want to play round after round of your glorious game without ever refreshing the browser! -->
-        <button id="reset-button">Reset</button>
-    </div>
+    <body>
+        <!-- react entry point -->
+        <div id="root"></div>
     
-</body>
+    
+    </body>
 </html>
